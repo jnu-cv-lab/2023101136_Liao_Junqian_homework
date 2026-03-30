@@ -11,7 +11,7 @@
 - 操作系统：Ubuntu Linux
 - VS Code C++
 ## 基本信息
--test.jpg：原图
--cropped.jpg：裁剪图片
--gray_test.jpg：灰度图
--main.cpp：源文件
+- test.jpg：原图
+- cropped.jpg：裁剪图片
+- gray_test.jpg：灰度图
+- main.cpp：源文件
