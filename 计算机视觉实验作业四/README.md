@@ -25,6 +25,7 @@
 - 05_adaptive_checkerboard：棋盘格自适应下采样
 - 06_adaptive_chirp：chirp图自适应下采样
 - 07_adaptive_face：人脸自适应下采样
+- pic：人脸图
 
 
 
