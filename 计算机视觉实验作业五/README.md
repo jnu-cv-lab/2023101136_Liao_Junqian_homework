@@ -9,7 +9,7 @@
 2.  平行线是否仍保持平行
 3.  两条垂直线是否仍垂直
 4.  圆是否仍保持为圆
-- 最后，对一张存在透视畸变的平面图像进行校正（自行拍摄一张放置在桌面上的、带有文字和表格的A4纸），验证校正效果，观察校正后的文字是否存在变形。
+### 最后，对一张存在透视畸变的平面图像进行校正（自行拍摄一张放置在桌面上的、带有文字和表格的A4纸），验证校正效果，观察校正后的文字是否存在变形。
 ## 允许使用的工具
 - cv2.warpAffine
 - cv2.warpPerspective
@@ -19,16 +19,17 @@
 - 自行完成几何性质的判断
 - 自行撰写实验结论
 ## 实验结果与分析
-- 见计算机视觉实验报告四
+- 见计算机视觉实验报告五
 ## 图像信息
-- 01_checkerboard_comparison：棋盘格原图、直接下采样、加高斯滤波下采样图，及其FFT频谱图
-- 02_chirp_comparison：chirp原图、直接下采样、加高斯滤波下采样图，及其FFT频谱图
-- 03_checkerboard_sigma：对棋盘格选用不同σ进行高斯滤波下采样及其FFT频谱图
-- 04_chirp_sigma：对chirp图选用不同σ进行高斯滤波下采样及其FFT频谱图
-- 05_adaptive_checkerboard：棋盘格自适应下采样
-- 06_adaptive_chirp：chirp图自适应下采样
-- 07_adaptive_face：人脸自适应下采样
-- pic：人脸图
+- original：原始测试图
+- similarity：相似变换
+- affine：仿射变换
+- perspective：透视变换
+- comparison：比较图
+- A4paper：A4纸原图
+- corrected_A4：校正后的A4纸
+- comparison_A4：比较图（A4）
+
 
 
 
