@@ -26,9 +26,9 @@
 ### 任务2：优化器对比实验
 1. 实验条件：固定模型结构、固定数据集，仅更换优化器；
 2. 实验优化器：
-   - SGD（随机梯度下降）
-   - SGD+Momentum（带动量的随机梯度下降）
-   - Adam（自适应矩估计）
+   - SGD
+   - SGD+Momentum
+   - Adam
 3. 需记录指标：
    - 训练损失（training loss）
    - 验证损失（validation loss）
