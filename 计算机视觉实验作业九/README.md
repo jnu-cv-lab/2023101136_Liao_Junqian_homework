@@ -13,7 +13,7 @@
 - misclassified：错误分类图片示例
 - misclassified_number：错误分类数字汇总
 ## 代码信息
-- 2023101136_Liao_Junqian_MNIST_original：上次的MNIST_CNN模型（任务1）
+- 2023101136_Liao_Junqian_MNIST_original：上次的MNIST_CNN模型
 - 2023101136_Liao_Junqian_MNIST_task2：任务2优化器对比
 - 2023101136_Liao_Junqian_MNIST_task2：任务3-7
 ## 实验结果与分析
