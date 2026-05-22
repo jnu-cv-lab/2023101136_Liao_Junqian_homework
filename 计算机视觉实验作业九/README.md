@@ -1,7 +1,8 @@
 # 计算机视觉实验作业九
 ## 图像信息
-- CIFAR-10文件夹：基础任务
-- CIFAR_10_misclassified：错误分类示例
+### images_task2：任务2图像
+- Adam/SGD/SGD_Momentum：Adam/SGD/SGD+Momentum优化器的训练过程及数据
+- Adam/SGD/SGD_Momentum_test_acc：Adam/SGD/SGD+Momentum优化器的测试损失与测试准确率
 - CIFAR_10_test_predictions：测试示例
 - CIFAR_10_test_samples：CIFAR-10数据集样本示例
 - CIFAR_10_training_curves：训练曲线
@@ -9,10 +10,9 @@
 - CIFAR10_improved文件夹：CIFAR-10进阶任务图像，具体命名同上
 - MNIST_improved_images文件夹：MNIST进阶任务图像，具体命名同上（多了一张不同优化器训练过程）
 ## 代码信息
-- 2023101136_Liao_Junqian_CIFAR-10_basic：CIFAR-10基础任务
-- 2023101136_Liao_Junqian_CIFAR-10_improved：CIFAR-10进阶任务
-- 2023101136_Liao_Junqian_MNIST_basic：MNIST基础任务
-- 2023101136_Liao_Junqian_MNIST_improved：MNIST进阶任务
+- 2023101136_Liao_Junqian_MNIST_original：上次的MNIST_CNN模型（任务1）
+- 2023101136_Liao_Junqian_MNIST_task2：任务2优化器对比
+- 2023101136_Liao_Junqian_MNIST_task2：任务3-7
 ## 实验结果与分析
 - 见实验报告
 ## 实验内容与要求
