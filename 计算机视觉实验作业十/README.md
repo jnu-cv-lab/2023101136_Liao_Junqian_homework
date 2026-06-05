@@ -1,71 +1,26 @@
-# 计算机视觉实验作业十
+# 实现并比较 Sinusoidal Position Encoding 与 RoPE
 ## 图像信息
-- training_process_task1：原模型训练过程（任务一）
-### images_task2：任务2图像
-- Adam/SGD/SGD_Momentum：Adam/SGD/SGD+Momentum优化器的训练过程及数据
-- Adam/SGD/SGD_Momentum_test_acc：Adam/SGD/SGD+Momentum优化器的测试损失与测试准确率
-- optimizer_comparison：不同优化器的训练/验证损失与训练/验证准确率的折线图
-### images_task3-7：任务3-7图像
-- LR0.1/0.01/0.001：学习率为0.1/0.01/0.001的训练过程及数据
-- lr_comparison：不同学习率的训练/验证损失与训练/验证准确率的折线图
-- confusion_matrix：混淆矩阵
-- conv1_kernels：第一层卷积核
-- misclassified：错误分类图片示例
-- misclassified_number：错误分类数字汇总
+- sinusoidal_pe：Sinusoidal Position Encoding热力图
+- rope_high_dim：高维 RoPE 特征热力图
+- input_comparison：E+pos 与 RoPE 左右对比热力图
+- relative_position：RoPE 相对位置验证柱状图
 ## 代码信息
-- 2023101136_Liao_Junqian_MNIST_original：上次的MNIST_CNN模型
-- 2023101136_Liao_Junqian_MNIST_task2：任务2优化器对比
-- 2023101136_Liao_Junqian_MNIST_task2：任务3-7
+- 2023101136_Liao_Junqian
 ## 实验结果与分析
 - 见实验报告
 ## 实验内容与要求
-### 任务1：复用上次CNN模型
-1. 采用上一次实验中用于MNIST或CIFAR-10数据集的CNN模型结构；
-2. 保持模型结构完全不修改，使用相同数据集重新训练模型；
-3. 完整记录模型训练全过程数据。
-### 任务2：优化器对比实验
-1. 实验条件：固定模型结构、固定数据集，仅更换优化器；
-2. 实验优化器：
-   - SGD
-   - SGD+Momentum
-   - Adam
-3. 需记录指标：
-   - 训练损失（training loss）
-   - 验证损失（validation loss）
-   - 训练准确率（training accuracy）
-   - 验证准确率（validation accuracy）
-   - 测试准确率（test accuracy）
-### 任务3：学习率对比实验
-1. 实验条件：固定优化器为 Adam，固定模型与数据集；
-2. 实验学习率：0.1、0.01、0.001；
-3. 实验要求：对比不同学习率下模型的损失曲线、准确率曲线变化规律。
-### 任务4：卷积核可视化
-1. 可视化目标：模型第一层卷积层的卷积核；
-2. 展示要求：至少显示8个卷积核；
-3. 分析要求：
-   - 判断训练后的卷积核是否呈现边缘、方向、纹理等特征；
-   - 简要阐述卷积核的训练学习原理。
-### 任务5：Feature map可视化
-1. 实验步骤：从测试集中选取一张图片输入训练完成的CNN模型；
-2. 可视化目标：第一层卷积层输出的特征图；
-3. 展示要求：至少显示8张特征图；
-4. 分析要求：
-   - 观察不同特征图的强响应区域；
-   - 说明不同卷积核提取的图像特征差异。
-### 任务6：错误分类样本分析
-1. 实验步骤：从测试集中筛选模型预测错误的样本；
-2. 展示要求：显示至少8张错误分类图片，每张图片标注：`真实类别/预测类别`；
-3. 分析内容：
-   - 统计数据集中最容易被混淆的类别；
-   - 分析模型分类错误的可能原因；
-   - 从数据、模型结构、训练方法三个维度提出准确率提升方案。
-### 任务7：混淆矩阵绘制与分析
-1. 实验要求：基于测试集绘制模型分类混淆矩阵；
-2. 分析内容：
-   - 说明混淆矩阵对角线元素的含义；
-   - 说明混淆矩阵非对角线元素的含义；
-   - 找出数据集中混淆程度最严重的两个类别。
-
-
-
-
+### 任务：
+1. 实现 sinusoidal position encoding； 
+2. 实现二维向量旋转； 
+3. 实现高维 RoPE；
+4. 对比 E+pos 和 RoPE 的输入方式；
+5. 用数值实验验证 RoPE 的相对位置性质；
+6. 说明：为什么 RoPE 比简单的 E+pos 更巧妙？
+### 回答：
+1. Transformer 为什么需要位置编码；
+2. 传统 sinusoidal position encoding 是如何生成的；
+3. E+pos 的位置注入方式为什么有“内容和位置混合”的问题；
+4. RoPE 不是加法，而是旋转；
+5. RoPE 作用在 Q 和 K 上；
+6. RoPE 的点积天然包含相对位置；
+7. attention score 里的相对位置关系可以通过旋转结构自然出现。
