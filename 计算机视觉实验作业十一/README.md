@@ -36,7 +36,7 @@
 - 完成模型训练、测试集评估与单个视频样本推理。
 - 理解该方法在羽毛球商业化视频分析中的优势与局限。
 
-# 项目目录结构
+## 项目目录结构
 计算机视觉实验作业十一/
 ├── data/
 │   └── archive/
@@ -65,4 +65,5 @@
 ├── training_curves.png
 ├── attention_heatmap.png
 ├── demo_video.mp4
-└── demo_skeleton.mp4
+├── demo_skeleton.mp4
+└── README.md
