@@ -14,12 +14,13 @@
 - attention_analysis.py：注意力权重提取与可视化
 - visualize_skeleton.py：骨架连线可视化生成视频
 
+## 实验运行
 1. 数据预处理
 - python src/preprocess.py
 2. 训练模型
 - python src/train.py
 3. 单样本推理
-python src/inference.py
+- python src/inference.py
 
 - 注意力分析
 - python src/attention_analysis.py
