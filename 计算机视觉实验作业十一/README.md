@@ -14,6 +14,18 @@
 - attention_analysis.py：注意力权重提取与可视化
 - visualize_skeleton.py：骨架连线可视化生成视频
 
+1. 数据预处理
+- python src/preprocess.py
+2. 训练模型
+- python src/train.py
+3. 单样本推理
+python src/inference.py
+
+- 注意力分析
+- python src/attention_analysis.py
+- 骨架可视化
+- python src/visualize_skeleton.py
+
 ## 实验内容与要求
 ### 任务：
 - 理解视频动作识别任务如何转化为骨架时间序列分类任务。
