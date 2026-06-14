@@ -21,7 +21,7 @@
 - python src/train.py
 3. 单样本推理
 - python src/inference.py
-
+4. 可选项
 - 注意力分析
 - python src/attention_analysis.py
 - 骨架可视化
