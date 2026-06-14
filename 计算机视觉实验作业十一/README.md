@@ -66,5 +66,4 @@
 ├── training_curves.png
 ├── attention_heatmap.png
 ├── demo_video.mp4
-├── demo_skeleton.mp4
-└── README.md
+└── demo_skeleton.mp4
