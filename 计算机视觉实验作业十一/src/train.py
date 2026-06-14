@@ -130,3 +130,6 @@ torch.save(model.state_dict(), os.path.join(DATA_DIR, 'skeleton_transformer.pth'
 print(f"Model saved to {os.path.join(DATA_DIR, 'skeleton_transformer.pth')}")
 print(f"Confusion matrix saved to confusion_matrix.png")
 print(f"Training curves saved to training_curves.png")
+
+
+
