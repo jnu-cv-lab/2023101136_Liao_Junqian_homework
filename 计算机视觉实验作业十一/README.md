@@ -35,3 +35,34 @@
 - 实现一个轻量级 Skeleton Transformer，用 Transformer Encoder 对动作序列分类。
 - 完成模型训练、测试集评估与单个视频样本推理。
 - 理解该方法在羽毛球商业化视频分析中的优势与局限。
+
+# 项目目录结构
+计算机视觉实验作业十一/
+├── data/
+│   └── archive/
+│       ├── backhand_drive/
+│       ├── backhand_net_shot/
+│       ├── forehand_clear/
+│       ├── forehand_drive/
+│       ├── forehand_lift/
+│       └── forehand_net_shot/
+├── src/
+│   ├── preprocess.py
+│   ├── model.py
+│   ├── train.py
+│   ├── inference.py
+│   ├── attention_analysis.py
+│   └── visualize_skeleton.py
+├── outputs/
+│   ├── X_train.npy
+│   ├── y_train.npy
+│   ├── X_test.npy
+│   ├── y_test.npy
+│   ├── label_map.json
+│   ├── best_model.pth
+│   └── confusion_matrix.png
+├── confusion_matrix.png
+├── training_curves.png
+├── attention_heatmap.png
+├── demo_video.mp4
+└── demo_skeleton.mp4
